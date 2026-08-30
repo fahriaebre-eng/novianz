@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-primary: #ff0a0a;
+    --red-dark: #8b0000;
+    --dark-bg: #0a0a0a;
+    --dark-card: #111111;
+    --text-light: #ffffff;
+    --text-gray: #888888;
+    --neon-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(ellipse at 20% 50%, rgba(139, 0, 0, 0.2) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(255, 0, 0, 0.1) 0%, transparent 60%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--red-primary);
+    border-radius: 5px;
+    box-shadow: var(--neon-shadow);
+}
+
+.header {
+    background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+    padding: 25px 40px;
+    border-bottom: 3px solid var(--red-primary);
+    box-shadow: var(--neon-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--red-primary), #ff6666, var(--red-primary));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.user-greeting {
+    font-size: 18px;
+    color: var(--text-gray);
+    padding: 10px 20px;
+    border: 1px solid var(--red-primary);
+    border-radius: 8px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+.user-greeting .username {
+    color: var(--red-primary);
+    font-weight: 700;
+}
+
+.login-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.login-box {
+    background: var(--dark-card);
+    padding: 40px 50px;
+    border-radius: 16px;
+    border: 1px solid var(--red-primary);
+    box-shadow: var(--neon-shadow);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    color: var(--red-primary);
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: var(--red-primary);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--red-primary), var(--red-dark));
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.4);
+}
+
+.main-content {
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: var(--dark-card);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tab-btn:hover {
+    border-color: var(--red-primary);
+    color: white;
+}
+
+.tab-btn.active {
+    background: var(--red-primary);
+    border-color: var(--red-primary);
+    color: white;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    background: var(--dark-card);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    border-color: var(--red-primary);
+}
+
+.card h3 {
+    color: var(--red-primary);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p, .card li {
+    color: var(--text-gray);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.build-form input,
+.build-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.build-form input:focus,
+.build-form textarea:focus {
+    outline: none;
+    border-color: var(--red-primary);
+}
+
+.build-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: 'Courier New', monospace;
+}
+
+.btn-build {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--red-primary), #cc0000);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-build:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.4);
+}
+
+.download-box {
+    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+.download-link {
+    color: #00ff88;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.download-link:hover {
+    background: #00ff88;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 22px;
+    }
+    .login-box {
+        padding: 25px;
+    }
+    .main-content {
+        padding: 15px;
+    }
+    .tabs {
+        flex-direction: column;
+    }
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
