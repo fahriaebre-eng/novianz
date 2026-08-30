@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIII Website - Programming Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="mainHeader">
+        <h1>🔥 WELCOME TO RIII WEBSITE</h1>
+        <div class="user-greeting" id="userGreeting">
+            👤 <span class="username">Belum Login</span>
+        </div>
+    </header>
+
+    <!-- ===== LOGIN SECTION ===== -->
+    <section class="login-section" id="loginSection">
+        <div class="login-box">
+            <h2>🔐 LOGIN</h2>
+            <p style="color:var(--text-gray);margin-bottom:20px;">Klik tombol di bawah untuk masuk</p>
+            <button class="btn-login" id="loginBtn">LOGIN</button>
+            <p style="color:var(--text-gray);font-size:12px;margin-top:12px;">Satu klik langsung masuk!</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-content" id="mainContent" style="display:none;">
+
+        <!-- TABS -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">🏠 Home</button>
+            <button class="tab-btn" data-tab="tab2">📖 Programming</button>
+            <button class="tab-btn" data-tab="tab3">⚙️ Server</button>
+            <button class="tab-btn" data-tab="tab4">📱 Build APK</button>
+            <button class="tab-btn" data-tab="tab5">🔧 Tools</button>
+        </div>
+
+        <!-- TAB 1: HOME -->
+        <div class="tab-content active" id="tab1">
+            <div class="card">
+                <h3>🔥 Selamat Datang di RIII Website!</h3>
+                <p>
+                    Website ini adalah pusat belajar programming, server management, dan build APK.
+                    Dibuat dengan teknologi modern dan desain <strong style="color:var(--red-primary);">Night Red</strong> yang keren.
+                </p>
+                <br />
+                <p>✨ <strong>Fitur yang tersedia:</strong></p>
+                <ul style="color:var(--text-gray);list-style:none;padding:10px 0;line-height:2;">
+                    <li>✅ Login 1 klik (tanpa captcha & username)</li>
+                    <li>✅ Penjelasan tentang Programming</li>
+                    <li>✅ Penjelasan tentang Server</li>
+                    <li>✅ Build APK dari HTML atau URL</li>
+                    <li>✅ Custom icon, name, package, permission</li>
+                    <li>✅ APK tanpa toolbar (fullscreen)</li>
+                    <li>✅ Download APK langsung</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB 2: PROGRAMMING -->
+        <div class="tab-content" id="tab2">
+            <div class="card">
+                <h3>📖 Apa itu Programming?</h3>
+                <p>
+                    <strong>Programming</strong> adalah proses menulis kode untuk membuat program komputer.
+                    Ini adalah cara kita berkomunikasi dengan komputer untuk melakukan tugas tertentu.
+                </p>
+                <br />
+                <h4 style="color:var(--red-primary);">🗂️ Bahasa Pemrograman Populer:</h4>
+                <ul style="color:var(--text-gray);padding:10px 20px;line-height:2;">
+                    <li>🔹 <strong>Python</strong> - Data Science, AI, Backend</li>
+                    <li>🔹 <strong>JavaScript</strong> - Web Development, Frontend & Backend</li>
+                    <li>🔹 <strong>Java</strong> - Android, Enterprise</li>
+                    <li>🔹 <strong>Kotlin</strong> - Android Modern</li>
+                    <li>🔹 <strong>Go</strong> - High Performance Backend</li>
+                    <li>🔹 <strong>Rust</strong> - System Programming</li>
+                </ul>
+                <br />
+                <p>
+                    Programming adalah skill yang sangat berharga di era digital. Mulai belajar dari
+                    dasar dan terus berlatih!
+                </p>
+            </div>
+            <div class="card">
+                <h3>🛠️ Tools untuk Programming</h3>
+                <ul style="color:var(--text-gray);padding:10px 20px;line-height:2;">
+                    <li>📌 <strong>VS Code</strong> - Editor kode terbaik</li>
+                    <li>📌 <strong>Git</strong> - Version control</li>
+                    <li>📌 <strong>Docker</strong> - Containerization</li>
+                    <li>📌 <strong>Postman</strong> - API Testing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB 3: SERVER -->
+        <div class="tab-content" id="tab3">
+            <div class="card">
+                <h3>⚙️ Apa itu Server?</h3>
+                <p>
+                    <strong>Server</strong> adalah komputer yang melayani permintaan dari komputer lain (client).
+                    Server menyimpan data, menjalankan aplikasi, dan memberikan respons ke client.
+                </p>
+                <br />
+                <h4 style="color:var(--red-primary);">📊 Jenis-Jenis Server:</h4>
+                <ul style="color:var(--text-gray);padding:10px 20px;line-height:2;">
+                    <li>🔹 <strong>Web Server</strong> - Menyajikan halaman web (Apache, Nginx)</li>
+                    <li>🔹 <strong>Database Server</strong> - Menyimpan data (MySQL, PostgreSQL)</li>
+                    <li>🔹 <strong>File Server</strong> - Berbagi file</li>
+                    <li>🔹 <strong>Mail Server</strong> - Mengirim email</li>
+                    <li>🔹 <strong>Proxy Server</strong> - Penerus permintaan</li>
+                </ul>
+                <br />
+                <p>
+                    Server modern menggunakan teknologi cloud seperti AWS, Google Cloud, dan Azure
+                    untuk skalabilitas dan keandalan.
+                </p>
+            </div>
+            <div class="card">
+                <h3>📦 Build APK di Server</h3>
+                <p>
+                    Website ini menyediakan fitur <strong>build APK</strong> langsung dari server.
+                    Anda bisa membuat APK dari file HTML atau URL, dengan custom icon, nama, dan permission.
+                </p>
+                <br />
+                <p>🔹 <strong>Via HTML:</strong> Upload file HTML atau tulis langsung</p>
+                <p>🔹 <strong>Via URL:</strong> Masukkan URL website yang ingin dijadikan APK</p>
+            </div>
+        </div>
+
+        <!-- TAB 4: BUILD APK -->
+        <div class="tab-content" id="tab4">
+            <div class="card">
+                <h3>📱 Build APK</h3>
+                <p style="color:var(--text-gray);margin-bottom:20px;">
+                    Buat APK Android dari HTML atau URL dengan custom icon, nama, package, dan permission.
+                </p>
+
+                <!-- PILIH METODE -->
+                <div style="display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;">
+                    <button class="tab-btn active" id="methodHtmlBtn" style="flex:1;">📄 HTML</button>
+                    <button class="tab-btn" id="methodUrlBtn" style="flex:1;">🔗 URL</button>
+                </div>
+
+                <!-- FORM HTML -->
+                <form class="build-form" id="buildFormHtml">
+                    <input type="text" id="appName" placeholder="Nama Aplikasi (contoh: MyApp)" required />
+                    <input type="text" id="pkgName" placeholder="Package Name (contoh: com.myapp.app)" required />
+                    <input type="text" id="iconData" placeholder="Icon Base64 (kosongkan untuk default)" />
+                    <input type="text" id="permissions" placeholder="Permission (pisahkan dengan koma, contoh: android.permission.CAMERA)" />
+                    <textarea id="htmlContent" placeholder="Masukkan HTML content disini..."></textarea>
+                    <button type="submit" class="btn-build">🚀 BUILD APK</button>
+                </form>
+
+                <!-- FORM URL -->
+                <form class="build-form" id="buildFormUrl" style="display:none;">
+                    <input type="text" id="appNameUrl" placeholder="Nama Aplikasi (contoh: MyApp)" required />
+                    <input type="text" id="pkgNameUrl" placeholder="Package Name (contoh: com.myapp.app)" required />
+                    <input type="text" id="iconDataUrl" placeholder="Icon Base64 (kosongkan untuk default)" />
+                    <input type="text" id="permissionsUrl" placeholder="Permission (pisahkan dengan koma)" />
+                    <input type="url" id="urlContent" placeholder="Masukkan URL website (contoh: https://example.com)" required />
+                    <button type="submit" class="btn-build">🚀 BUILD APK FROM URL</button>
+                </form>
+
+                <!-- DOWNLOAD BOX -->
+                <div class="download-box" id="downloadBox">
+                    <p style="color:#00ff88;font-weight:600;margin-bottom:10px;">✅ APK Berhasil Dibuat!</p>
+                    <a href="#" class="download-link" id="downloadLink" download>⬇️ Download APK</a>
+                    <p style="color:var(--text-gray);font-size:12px;margin-top:10px;" id="apkInfo"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: TOOLS -->
+        <div class="tab-content" id="tab5">
+            <div class="card">
+                <h3>🔧 Tools Lengkap</h3>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px;">
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">📝 Code Editor</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Edit kode dengan syntax highlight</p>
+                    </div>
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">🔍 JSON Formatter</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Format JSON dengan rapi</p>
+                    </div>
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">🔄 Base64 Encoder</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Encode/decode Base64</p>
+                    </div>
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">🔐 Password Generator</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Buat password kuat</p>
+                    </div>
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">📱 APK Info</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Lihat info APK</p>
+                    </div>
+                    <div style="background:#1a1a1a;padding:20px;border-radius:8px;border:1px solid #333;">
+                        <h4 style="color:var(--red-primary);">🌐 IP Checker</h4>
+                        <p style="font-size:13px;color:var(--text-gray);">Cek IP publik Anda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
